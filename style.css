@@ -1,17 +1,17 @@
 /* ── PALETTE — drawn from badge: sky blue, navy, gold, red, white ─────────
-   Sky blue   #5b9bd5   (badge light blue field)
-   Sky pale   #d6e8f7   (tinted white areas)
-   Navy       #1a2f5a   (badge dark blue)
-   Navy deep  #0e1c38
-   Gold       #d4a017   (badge gold/yellow)
-   Gold light #f0c84a
-   Gold pale  #fdf3d0
-   Red        #c0281e   (badge red)
-   Red dark   #8a1a12
-   Off-white  #f4f7fb   (page bg — cool, airy)
-   White      #ffffff
-   Mid        #5a6a82
-   Dark       #111827
+    Sky blue   #5b9bd5   (badge light blue field)
+    Sky pale   #d6e8f7   (tinted white areas)
+    Navy       #1a2f5a   (badge dark blue)
+    Navy deep  #0e1c38
+    Gold       #d4a017   (badge gold/yellow)
+    Gold light #f0c84a
+    Gold pale  #fdf3d0
+    Red        #c0281e   (badge red)
+    Red dark   #8a1a12
+    Off-white  #f4f7fb   (page bg — cool, airy)
+    White      #ffffff
+    Mid        #5a6a82
+    Dark       #111827
    ─────────────────────────────────────────────────────────────────────── */
 :root {
   --sky:        #5b9bd5;
@@ -48,6 +48,7 @@ nav {
   border-bottom:3px solid var(--gold);
   transition:background .3s;
 }
+
 .nav-logo { display:flex; align-items:center; gap:.9rem; text-decoration:none; }
 /* Inline SVG emblem in nav — small version */
 .nav-emblem { width:42px; height:42px; flex-shrink:0; }
@@ -66,10 +67,12 @@ nav {
 .nav-cta:hover { background:var(--gold-lt) !important; }
 .hamburger { display:none; background:none; border:none; color:var(--white); font-size:1.5rem; cursor:pointer; }
 
-/* ── SCHOOL EMBLEM SVG (reusable component) ───────────────────────────── */
+
+/* ── SCHOOL EMBLEM SVG (reusable component) ─────────────────────────────
 /* Built from badge description: shield shape, light-blue field,
    navy stripe, gold torch, red star/accent, school initials */
-.emblem-svg { display:block; }
+.emblem-svg { display:block; } */
+
 
 /* ── HERO ─────────────────────────────────────────────────────────────── */
 #hero {
