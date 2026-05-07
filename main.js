@@ -13,7 +13,8 @@ async function loadPartial(id, file) {
         document.addEventListener('keydown',e=>{ 
             if(e.key==='Escape') 
                 document.querySelectorAll('.overlay.open').forEach(m=>{ m.classList.remove('open'); 
-            document.body.style.overflow=''; }); });
+            document.body.style.overflow=''; }); 
+        });
 
 function submitForm(){
     const t=document.getElementById('toast'); t.style.display='block';
@@ -69,7 +70,18 @@ async function init() {
                     nl.removeAttribute('style'); }
                 
                     else { 
-                    Object.assign(nl.style,{display:'flex',flexDirection:'column',position:'fixed',top:'70px',left:'0',right:'0',background:'rgba(14,28,56,.99)',padding:'2rem',zIndex:'99',gap:'.3rem'}); 
+                    Object.assign(nl.style,{
+                        display:'flex',
+                        flexDirection:'column',
+                        position:'fixed',
+                        top:'70px',
+                        left:'0',
+                        right:'0',
+                        background:'rgba(14,28,56,.99)',
+                        padding:'2rem',
+                        zIndex:'99',
+                        gap:'.3rem'
+                    }); 
                 }
         });
 
